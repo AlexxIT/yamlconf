@@ -8,7 +8,7 @@ def load(filename='config.yml') -> dict:
     try:
         config: dict = yaml.load(open(filename, encoding='utf-8'))
 
-        logconf: dict = config.pop('logging')
+        logconf: dict = config.pop('logging', None)
         if logconf:
             logconf.setdefault('version', 1)
             logconf.setdefault('disable_existing_loggers', False)
