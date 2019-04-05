@@ -10,9 +10,12 @@ def load(filename='config.yml') -> dict:
 
         logconf: dict = config.pop('logging', None)
         if logconf:
-            logconf.setdefault('version', 1)
-            logconf.setdefault('disable_existing_loggers', False)
-            logging.config.dictConfig(logconf)
+            if logconf.get('level'):
+                logging.basicConfig(**logconf)
+            else:
+                logconf.setdefault('version', 1)
+                logconf.setdefault('disable_existing_loggers', False)
+                logging.config.dictConfig(logconf)
 
         return config
 

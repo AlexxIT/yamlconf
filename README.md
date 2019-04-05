@@ -26,3 +26,27 @@ server:
   user: ...
   pass: ...
 ```
+
+OR
+
+```yaml
+logging:
+  filename: "app.log"
+  datefmt: "[%Y-%m-%d %H:%M:%S %z]"
+  format: "%(asctime)s %(levelname)s [%(name)s] %(message)s"
+  level: DEBUG
+  
+server:
+  user: ...
+  pass: ...
+```
+
+# Changelog
+
+## 0.1.2 - 2019-04-05
+
+- Add `basicConfig` version
+
+## 0.1.1 - 2019-04-01
+
+- Fix empty logging in conf
