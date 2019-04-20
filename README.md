@@ -41,12 +41,12 @@ server:
   pass: ...
 ```
 
-# Changelog
+## Changelog
 
-## 0.1.2 - 2019-04-05
+### 0.1.2 - 2019-04-05
 
 - Add `basicConfig` version
 
-## 0.1.1 - 2019-04-01
+### 0.1.1 - 2019-04-01
 
 - Fix empty logging in conf

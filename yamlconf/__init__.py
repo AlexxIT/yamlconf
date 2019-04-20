@@ -3,6 +3,8 @@ import logging.config
 
 import yaml
 
+__version__ = '0.1.2'
+
 
 def load(filename='config.yml') -> dict:
     try:
