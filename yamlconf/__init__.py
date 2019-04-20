@@ -21,7 +21,7 @@ def load(filename='config.yml') -> dict:
 
         return config
 
-    except Exception as e:
-        logging.getLogger(__name__).warning(f"Error reading config: {e}")
+    except:
+        logging.getLogger(__name__).exception(f"Error load yaml config")
 
         return {}

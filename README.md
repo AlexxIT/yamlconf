@@ -46,6 +46,7 @@ server:
 ### 0.1.3 - 2019-04-20
 
 - Change to `yaml.safe_load`
+- Change `error` to `exception`
 
 ### 0.1.2 - 2019-04-05
 
