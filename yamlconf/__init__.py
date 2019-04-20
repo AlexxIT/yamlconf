@@ -3,12 +3,12 @@ import logging.config
 
 import yaml
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 
 def load(filename='config.yml') -> dict:
     try:
-        config: dict = yaml.load(open(filename, encoding='utf-8'))
+        config: dict = yaml.safe_load(open(filename, encoding='utf-8'))
 
         logconf: dict = config.pop('logging', None)
         if logconf:

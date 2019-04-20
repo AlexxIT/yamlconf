@@ -43,6 +43,10 @@ server:
 
 ## Changelog
 
+### 0.1.3 - 2019-04-20
+
+- Change to `yaml.safe_load`
+
 ### 0.1.2 - 2019-04-05
 
 - Add `basicConfig` version
